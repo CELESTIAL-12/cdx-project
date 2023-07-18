@@ -1,0 +1,453 @@
+/* Add the following CSS to your stylesheet */
+/* .bg-body {
+    background-image: url('assets/images/bg-body.png');
+}
+
+.dark .bg-body {
+    background-image: url('assets/images/bg-body-2.png');
+} */
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+}
+
+.min-h-screen {
+    min-height: calc(100vh - 138px);
+}
+
+.pb-14 {
+    padding-bottom: 3.5rem;
+}
+
+.mt-6 {
+    margin-top: 1.5rem;
+}
+
+.grid {
+    display: grid;
+}
+
+.grid-cols-12 {
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+}
+
+.gap-4 {
+    gap: 1rem;
+}
+
+.col-span-12 {
+    grid-column: span 12 / span 12;
+}
+
+.lg\\:col-span-3 {
+    grid-column: span 3 / span 3;
+}
+
+.mb-4 {
+    margin-bottom: 1rem;
+}
+
+.card {
+    border-radius: 0.375rem;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+.card-header {
+    padding: 0;
+    border: 0;
+}
+
+.card-body {
+    padding: 0;
+}
+
+.h-[calc] {
+    height: 675px;
+}
+
+.col-span-9 {
+    grid-column: span 9 / span 9;
+}
+
+.mb-4 {
+    margin-bottom: 1rem;
+}
+
+.w-auto {
+    width: auto;
+}
+
+.flex-1 {
+    flex: 1;
+}
+
+.p-1 {
+    padding: 0.25rem;
+}
+
+.sm\\:p-5 {
+    padding: 1.25rem;
+}
+
+.w-[calc] {
+    width: 550px;
+}
+
+#messagess {
+    overflow-y: auto;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.space-y-4 > :not([hidden]) ~ :not([hidden]) {
+    --space-y-reverse: 0;
+    margin-top: calc(1rem * var(--space-y-reverse));
+    margin-bottom: calc(1rem * (1 - var(--space-y-reverse)));
+}
+
+.p-4 {
+    padding: 1rem;
+}
+
+.overflow-y-auto {
+    overflow-y: auto;
+}
+
+.border-t {
+    border-top-width: 1px;
+}
+
+.border-dashed {
+    border-style: dashed;
+}
+
+.border-gray-200 {
+    border-color: #edf2f7;
+}
+
+.pt-4 {
+    padding-top: 1rem;
+}
+
+.mb-2 {
+    margin-bottom: 0.5rem;
+}
+
+.border-slate-700 {
+    border-color: #4a5568;
+}
+
+.relative {
+    position: relative;
+}
+
+.flex {
+    display: flex;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.py-2 {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.lg\\:px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.bg-blue-500 {
+    background-color: #3b82f6;
+}
+
+.text-white {
+    color: #fff;
+}
+
+.text-sm {
+    font-size: 0.875rem;
+}
+
+.font-semibold {
+    font-weight: 600;
+}
+
+.rounded {
+    border-radius: 0.25rem;
+}
+
+.hover\\:bg-blue-600:hover {
+    background-color: #2563eb;
+}
+
+.py-2 {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.text-gray-600 {
+    color: #4b5563;
+}
+
+.font-medium {
+    font-weight: 500;
+}
+
+.dark\\:border-slate-800 {
+    border-color: #1f2937;
+}
+
+.dark\\:bg-slate-700 {
+    background-color: #374151;
+}
+
+.dark\\:text-slate-400 {
+    color: #9fa6b2;
+}
+
+.order-2 {
+    order: 2;
+}
+
+.w-auto {
+    width: auto;
+}
+
+.h-20 {
+    height: 5rem;
+}
+
+.rounded-full {
+    border-radius: 9999px;
+}
+
+.order-1 {
+    order: 1;
+}
+
+.flex-end {
+    justify-content: flex-end;
+}
+
+.justify-end {
+    justify-content: flex-end;
+}
+
+.max-w-xs {
+    max-width: 20rem;
+}
+
+.mx-2 {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+.items-end {
+    align-items: flex-end;
+}
+
+.items-start {
+    align-items: flex-start;
+}
+
+.py-2 {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.rounded-lg {
+    border-radius: 0.5rem;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.rounded-bl-none {
+    border-bottom-left-radius: 0;
+}
+
+.border {
+    border-width: 1px;
+}
+
+.bg-gray-50 {
+    background-color: #f9fafb;
+}
+
+.text-gray-600 {
+    color: #4b5563;
+}
+
+.pl-12 {
+    padding-left: 3rem;
+}
+
+.focus\\:outline-none:focus {
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+    box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.5);
+}
+
+.focus\\:placeholder-gray-400:focus::placeholder {
+    color: #cbd5e0;
+}
+
+.placeholder-gray-400::placeholder {
+    color: #cbd5e0;
+}
+
+.bg-gray-50 {
+    background-color: #f9fafb;
+}
+
+.dark\\:bg-slate-700 {
+    background-color: #374151;
+}
+
+.rounded-md {
+    border-radius: 0.375rem;
+}
+
+.py-2 {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.border {
+    border-width: 1px;
+}
+
+.border-gray-200 {
+    border-color: #edf2f7;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.bottom-0 {
+    bottom: 0;
+}
+
+.left-2 {
+    left: 0.5rem;
+}
+
+.right-2 {
+    right: 0.5rem;
+}
+
+.block {
+    display: block;
+}
+
+.print\\:hidden {
+    display: none !important;
+}
+
+.hidden {
+    display: none;
+}
+
+.button-image {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+@media (max-width: 1024px) {
+    .lg\\:grid-cols-12 {
+        grid-template-columns: repeat(12, minmax(0, 1fr));
+    }
+
+    .col-span-12 {
+        grid-column: span 12 / span 12;
+    }
+
+    .lg\\:col-span-3 {
+        grid-column: span 12 / span 12;
+    }
+
+    .col-span-9 {
+        grid-column: span 12 / span 12;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+
+@media (max-width: 640px) {
+    .lg\\:grid-cols-12 {
+        grid-template-columns: repeat(12, minmax(0, 1fr));
+    }
+
+    .col-span-12 {
+        grid-column: span 12 / span 12;
+    }
+
+    .lg\\:col-span-3 {
+        grid-column: span 12 / span 12;
+    }
+
+    .col-span-9 {
+        grid-column: span 12 / span 12;
+    }
+
+    .card {
+        height: auto;
+    }
+
+    .card-body {
+        padding: 1rem;
+    }
+
+    .h-[calc] {
+        height: auto;
+        max-height: 300px;
+    }
+
+    .h-[calc] {
+        height: auto;
+        max-height: 200px;
+    }
+
+    .w-[calc] {
+        width: 100%;
+    }
+    .message-container-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: flex-end;
+    }
+}
+
+/*  <div class="border-t border-dashed border-gray-200 pt-4 mb-0 sm:mb-0 dark:border-slate-700">
+<div class="relative flex">
+    <input type="text" placeholder="Write your message!" [(ngModel)]="message"
+        class="flex-grow focus:outline-none focus:placeholder-gray-400 text-gray-600 placeholder-gray-400 pl-12 bg-gray-50 dark:bg-slate-700 rounded-md py-2 border border-gray-200 dark:border-slate-800"
+        (keyup.enter)="sendMessage()" />
+    <div class="absolute right-0 items-center inset-y-0 hidden sm:flex">
+        <button type="button"
+            class="inline-flex items-center justify-center rounded-md px-4 py-3 transition duration-500 ease-in-out text-white bg-blue-500 hover:bg-blue-400 focus:outline-none"
+            (click)="sendMessage()">
+            <i class="fas fa-paper-plane"></i>
+        </button>
+    </div>
+</div>
+</div>  */

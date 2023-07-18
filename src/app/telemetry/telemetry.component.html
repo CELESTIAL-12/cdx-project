@@ -1,0 +1,196 @@
+<nav class="navbar navbar-expand-lg navbar-dark dark:bg-slate-800">
+  <a class="navbar-brand" href="#">
+      <img src="assets/images/logos/Logo1.png" alt="Website Symbol" width="70" height="40" class="d-inline-block ml-3 align-top">
+  </a>
+
+  <ul class="navbar-nav">
+      <li class="nav-item active">
+          <a routerLink="../upload" class="nav-link">
+              <span class="fa fa-home mr-1 text-white"></span> Home
+          </a>
+      </li>
+      <li class="nav-item active">
+          <a routerLink="../upload" class="nav-link">
+              <span class="fa fa-bars mr-1 text-white"></span> Menu
+          </a>
+      </li>
+      <li class="nav-item active">
+          <a routerLink="../chat" class="nav-link">
+              <span class="fa fa-robot mr-1 text-white"></span> Chatbot
+          </a>
+      </li>
+      <li class="nav-item active">
+          <a routerLink="../telemetry" class="nav-link">
+              <span class="fa fa-cog mr-1 text-white"></span> Settings
+          </a>
+      </li>
+  </ul>
+</nav>
+
+<div class="container mx-auto px-2 min-h-[calc(100vh-138px)] relative pb-14 mt-6">
+  <div class="grid lg:grid-cols-12 gap-4">
+    <div class="col-span-12 lg:col-span-3 mb-4 ">
+      <div class="card h-100 bottom-30px ">
+
+        <div class="card-header p-0 border-0 bg-white">
+          <div class="flex items-center mt-8 justify-center">
+            <a class="mr-3 mt-8 text-gray-600 hover:text-gray-900 text-decoration-none">
+              <i class=""></i> Dashboard
+            </a>
+          </div>
+          <hr class="mt-4" style="width: 80%;margin-left: 30px; border-color: black;">
+          <div class="flex items-center mt-4 justify-center">
+            <a class="mr-3 text-gray-600 hover:text-gray-900 text-decoration-none">
+              <i class=""></i> Charts
+            </a>
+          </div>
+          <div class="flex items-center mt-4 justify-center text-decoration-none">
+            <a class="text-gray-600 hover:text-gray-900 text-decoration-none">
+              <i class=""></i> User-profile
+            </a>
+          </div>
+          <div class="flex items-center mt-4 justify-center">
+            <a class="mr-3 text-gray-600 hover:text-gray-900 text-decoration-none">
+              <i class=""></i> Notifications
+            </a>
+            
+          </div>
+         
+        </div>
+        <div class="flex items-center mb-2 justify-center mt-auto" style="position: relative;">
+          <button class="py-2 lg:px-4 bg-blue-500 text-white text-sm font-semibold rounded hover:bg-blue-600">
+            Ask Jake
+          </button>
+        </div>
+        
+      </div> <!--end card-->
+    </div><!--end col-->
+
+    <div class="col-span-12 lg:col-span-9">
+      <div class="d-flex justify-content-start">
+        <button routerLink="../upload" class="bg-white-500 text-black border border-dark px-4 py-2 rounded-lg cursor-pointer mr-1 hover:bg-blue-100">
+          Upload & train
+        </button>
+        <button routerLink="../question" class="bg-white-500 text-black border border-dark px-4 py-2 rounded-md cursor-pointer mr-1 hover:bg-blue-100">
+          Q&A History
+        </button>
+        <button routerLink="../telemetry" class="bg-white-500 text-black border border-dark px-4 py-2 rounded-md cursor-pointer mr-1 hover:bg-blue-100">
+          Telemetry
+        </button>
+        <button routerLink="../control" class="bg-white-500 text-black border border-dark px-4 py-2 rounded-md cursor-pointer mr-1 hover:bg-blue-100">
+          Manage Users
+        </button>
+        <button routerLink="../chatbot-configuration" class="bg-white-500 text-black border border-dark px-4 py-2 rounded-md cursor-pointer mr-1 hover:bg-blue-100">
+          Chatbot Configuration
+        </button>
+      </div>
+
+      <div class="card mb-4" style="height: 550px; top: 10px;">
+        <div class="flex-1 p-2 sm:p-6 justify-between flex flex-col h-[725px]">
+          <div class="relative">
+            <div class="flex justify-end items-center ">
+              <a class="mr-auto text-black text-decoration-none">Dashboard</a>
+              <div class="flex">
+                <button class="bg-white-500 text-black px-4 py-2 cursor-pointer hover:bg-blue-100">
+                  <i class="fas fa-print"></i>
+                </button>
+                <button class="bg-white-500 text-black px-4 py-2 rounded-md cursor-pointer hover:bg-blue-100 ml-2">
+                  <i class="fas fa-file-export"></i>
+                </button>
+                <button class="bg-white-500 text-black px-4 py-2 rounded-md cursor-pointer hover:bg-blue-100 ml-2">
+                  <i class="fas fa-share-alt"></i>
+                </button>
+              </div>
+            </div>
+            <div class="container mx-auto px-2 mt-4">
+              <div class="flex justify-between">
+                <div class="flex items-center">
+                  <div class="flex flex-col">
+                    <span class="font-semibold mr-2">Bounce Rate:</span>
+                    <span>39.50%</span>
+                  </div>
+                  <div class="ml-2">
+                    <span class="text-red-500">&#9660;</span>
+                  </div>
+                </div>
+                <div class="flex items-center">
+                  <div class="flex flex-col">
+                    <span class="font-semibold mr-2">Users:</span>
+                    <span>19,786</span>
+                  </div>
+                  <div class="ml-2">
+                    <span class="text-green-500">&#9650;</span>
+                  </div>
+                </div>
+                <div class="flex items-center">
+                  <div class="flex flex-col">
+                    <span class="font-semibold mr-2">New Session:</span>
+                    <span>78.9</span>
+                  </div>
+                  <div class="ml-2">
+                    <span class="text-red-500">&#9660;</span>
+                  </div>
+                </div>
+                <div class="flex items-center">
+                  <div class="flex flex-col">
+                    <span class="font-semibold mr-2">Average Time on Site:</span>
+                    <div class="flex items-center">
+                      <span>3 min. 20s</span>
+                      <div class="ml-1">
+                        <span class="text-red-500">&#9660;</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="justify-center">
+              <div class="container mx-auto px-2 mt-4">
+                <div class="border-4 border-black-600 rounded-lg p-4 h-40 w-full">
+                  <p class="font-weight-bold">Model Efficiency</p>
+                  <div class="flex justify-between mt-6">
+                    <div class="flex items-center">
+                      <div class="flex flex-col">
+                        <span>1000</span>
+                        <span class="font-semibold mr-2">Asked Questions</span>
+                      </div>
+                    </div>
+                    <div class="flex items-center">
+                      <div class="flex flex-col">
+                        <span>70</span>
+                        <span class="font-semibold mr-2">Corrected</span>
+                      </div>
+                    </div>
+                    <div class="flex items-center">
+                      <div class="flex flex-col">
+                        <span>930</span>
+                        <span class="font-semibold mr-2">Accepted</span>
+                      </div>
+                    </div>
+                    <div class="flex items-center">
+                      <div class="flex flex-col">
+                        <span style="font-weight: bold;font-size: large; color: rgb(0, 132, 255);">93%</span>
+                        <span class="font-semibold mr-2">Efficiency</span>
+                      </div>
+                    </div>
+                    <div class="flex items-center">
+                      <div class="flex flex-col">
+                        <img src="assets/images/try.png" class="w-20 h-20 mb-2">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="assets/js/app.js"></script>
+    <script>
+      const el = document.getElementById('messages');
+      el.scrollTop = el.scrollHeight;
+    </script>
+  </div>
+</div>
